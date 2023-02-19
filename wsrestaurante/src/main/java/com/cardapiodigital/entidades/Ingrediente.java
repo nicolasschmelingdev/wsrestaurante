@@ -24,40 +24,40 @@ public class Ingrediente {
 
     private String txNome;
 
-    public Long getQtIngrediente() {
-        return qtIngrediente;
-    }
-
-    public void setQtIngrediente(Long qtIngrediente) {
-        this.qtIngrediente = qtIngrediente;
-    }
-
-    private Double preco;
-    
     @Transient
     private Long qtIngrediente;
 
-	public Long getIdingrediente() {
-		return idIngrediente;
-	}
+    private Double preco;
 
-	public void setIdingrediente(Long idIngrediente) {
-		this.idIngrediente = idIngrediente;
-	}
+    public Long getQtIngrediente() {
+	return qtIngrediente;
+    }
 
-	public String getTxNome() {
-		return txNome;
-	}
+    public void setQtIngrediente(Long qtIngrediente) {
+	this.qtIngrediente = qtIngrediente;
+    }
 
-	public void setTxNome(String txNome) {
-		this.txNome = txNome;
-	}
+    public Long getIdingrediente() {
+	return idIngrediente;
+    }
 
-	public Double getPreco() {
-		return preco;
-	}
+    public void setIdingrediente(Long idIngrediente) {
+	this.idIngrediente = idIngrediente;
+    }
 
-	public void setPreco(Double preco) {
-		this.preco = preco;
-	}
+    public String getTxNome() {
+	return txNome;
+    }
+
+    public void setTxNome(String txNome) {
+	this.txNome = txNome;
+    }
+
+    public Double getPreco() {
+	return preco;
+    }
+
+    public void setPreco(Double preco) {
+	this.preco = preco;
+    }
 }

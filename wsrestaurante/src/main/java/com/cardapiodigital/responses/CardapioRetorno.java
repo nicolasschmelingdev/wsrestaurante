@@ -9,9 +9,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude
 public class CardapioRetorno {
 
-	private List<Ingrediente> ingredientesAdicionais;
+    private List<Lanche> lanchesDisponiveis;
 
-	private List<Lanche> lanchesDisponiveis;
+    private List<Ingrediente> ingredientesAdicionais;
 
 	public List<Ingrediente> getIngredientesAdicionais() {
 		return ingredientesAdicionais;

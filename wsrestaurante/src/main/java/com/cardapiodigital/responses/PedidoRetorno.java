@@ -10,44 +10,54 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude
 public class PedidoRetorno {
 
-	private String mensagem;
+    private String mensagem;
 
-	private List<Ingrediente> ingredientesAdicionais;
+    private Optional<Lanche> lancheEscolhido;
 
-	private Optional<Lanche> lancheEscolhido;
+    private List<Ingrediente> ingredientesAdicionais;
 
-	private Double valorDoPedido;
+    private Double valorDoPedido;
 
-	public Double getValorDoPedido() {
-		return valorDoPedido;
-	}
+    private List<String> temPromocao;
 
-	public void setValorDoPedido(Double valorDoPedido) {
-		this.valorDoPedido = valorDoPedido;
-	}
+    public Double getValorDoPedido() {
+	return valorDoPedido;
+    }
 
-	public List<Ingrediente> getIngredientesAdicionais() {
-		return ingredientesAdicionais;
-	}
+    public void setValorDoPedido(Double valorDoPedido) {
+	this.valorDoPedido = valorDoPedido;
+    }
 
-	public void setIngredientesAdicionais(List<Ingrediente> ingredientesAdicionais) {
-		this.ingredientesAdicionais = ingredientesAdicionais;
-	}
+    public List<Ingrediente> getIngredientesAdicionais() {
+	return ingredientesAdicionais;
+    }
 
-	public String getMensagem() {
-		return mensagem;
-	}
+    public void setIngredientesAdicionais(List<Ingrediente> ingredientesAdicionais) {
+	this.ingredientesAdicionais = ingredientesAdicionais;
+    }
 
-	public void setMensagem(String mensagem) {
-		this.mensagem = mensagem;
-	}
+    public String getMensagem() {
+	return mensagem;
+    }
 
-	public Optional<Lanche> getLancheEscolhido() {
-		return lancheEscolhido;
-	}
+    public void setMensagem(String mensagem) {
+	this.mensagem = mensagem;
+    }
 
-	public void setLancheEscolhido(Optional<Lanche> lancheEscolhido) {
-		this.lancheEscolhido = lancheEscolhido;
-	}
+    public Optional<Lanche> getLancheEscolhido() {
+	return lancheEscolhido;
+    }
+
+    public void setLancheEscolhido(Optional<Lanche> lancheEscolhido) {
+	this.lancheEscolhido = lancheEscolhido;
+    }
+
+    public List<String> getTemPromocao() {
+        return temPromocao;
+    }
+
+    public void setTemPromocao(List<String> temPromocao) {
+        this.temPromocao = temPromocao;
+    }
 
 }
