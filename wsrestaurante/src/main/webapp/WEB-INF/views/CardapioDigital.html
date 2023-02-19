@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gerenciamento de Lanches - Startup de Alimentos</title>
+<style>
+/* CSS começa aqui */
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	background-color: #f2f2f2;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	margin-top: 30px;
+}
+
+.cardapio {
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.cardapio ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.cardapio li {
+	margin: 10px 0;
+}
+
+.cardapio label {
+	display: inline-block;
+	width: 100px;
+}
+
+.personalizado {
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.personalizado input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+.promocao {
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.promocao ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.promocao li {
+	margin: 10px 0;
+}
+
+.promocao label {
+	display: inline-block;
+	width: 200px;
+}
+
+.total {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+</style>
+</head>
+<body>
+ <h1>Gerenciamento de Lanches - Startup de Alimentos</h1>
+ <div class="cardapio">
+  <h2>Cardápio</h2>
+  <ul>
+   <li><label>X-Bacon:</label> <span>R$ 6,90</span></li>
+   <li><label>X-Burger:</label> <span>R$ 4,50</span></li>
+   <li><label>X-Egg:</label> <span>R$ 5,30</span></li>
+   <li><label>X-Egg Bacon:</label> <span>R$ 7,30</span></li>
+  </ul>
+ </div>
+ <div class="personalizado">
+  <h2>Personalizado</h2>
+  <form>
+   <label>Alface:</label> <input
+    type="checkbox"
+    name="alface"
+    value="0.40"
+   > <label>Bacon:</label> <input
+    type="checkbox"
+    name="bacon"
+    value="2.00"
+   > <label>Hambúrguer:</label> <input
+    type="checkbox"
+    name="hamburguer"
+    value="3.00"
+   > <label>Ovo:</label> <input
+    type="checkbox"
+    name="ovo"
+    value="0.80"
+   > <label>Queijo:</label> <input
+    type="checkbox"
+    name="queijo"
+    value="1.50"
+   >
+  </form>
+ </div>
+ <table>
+  <tr>
+   <th>Lanche</th>
+   <th>Ingredientes</th>
+   <th>Preço</th>
+  </tr>
+  <tr>
+   <td>X-Bacon</td>
+   <td>Bacon, hambúrguer de carne e queijo</td>
+   <td>R$ 6,50</td>
+  </tr>
+  <tr>
+   <td>X-Burger</td>
+   <td>Hambúrguer de carne e queijo</td>
+   <td>R$ 5,50</td>
+  </tr>
+  <tr>
+   <td>X-Egg</td>
+   <td>Ovo, hambúrguer de carne e queijo</td>
+   <td>R$ 5,80</td>
+  </tr>
+  <tr>
+   <td>X-Egg Bacon</td>
+   <td>Ovo, bacon, hambúrguer de carne e queijo</td>
+   <td>R$ 7,30</td>
+  </tr>
+ </table>
+ <form>
+  <label for="ingredientes">Escolha seus ingredientes:</label><br> <input
+   type="checkbox"
+   id="alface"
+   name="alface"
+   value="0.40"
+  > <label for="alface">Alface</label><br> <input
+   type="checkbox"
+   id="bacon"
+   name="bacon"
+   value="2.00"
+  > <label for="bacon">Bacon</label><br> <input
+   type="checkbox"
+   id="hamburguer"
+   name="hamburguer"
+   value="3.00"
+  > <label for="hamburguer">Hambúrguer de carne</label><br> <input
+   type="checkbox"
+   id="ovo"
+   name="ovo"
+   value="0.80"
+  > <label for="ovo">Ovo</label><br> <input
+   type="checkbox"
+   id="queijo"
+   name="queijo"
+   value="1.50"
+  > <label for="queijo">Queijo</label><br>
+  <br>
+  <button
+   type="button"
+   onclick="calcularPreco()"
+  >Calcular preço</button>
+ </form>
+ <p id="preco-final"></p>
+</body>
+</html>
