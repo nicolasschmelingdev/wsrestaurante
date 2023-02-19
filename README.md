@@ -46,7 +46,7 @@ O projeto foi desenvolvido em Java 8, utilizando Maven para gerenciar as depend�
 Além da implementação dos critérios de entrega, foram implementados os seguintes diferenciais:
 
 Segurança: a aplicação utiliza autenticação e autorização para proteger as rotas de acesso POST através de ferramentas gerenciadas pelo Spring Security.
-Swagger: a aplicação disponibiliza uma documentação Swagger com a descrição de todas as rotas disponíveis.
+Swagger: a aplicação disponibiliza uma documentação Swagger com a descrição de todas as rotas disponíveis. A documentação está disponivel no repositório Git.
 Clean Code: a aplicação foi desenvolvida seguindo as boas práticas de programação, com foco na legibilidade e manutenibilidade do código.
 
 Para executar a aplicação, siga os seguintes passos:
