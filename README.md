@@ -51,7 +51,7 @@ Swagger: a aplicação disponibiliza uma documentação Swagger com a descriçã
 
 Clean Code: a aplicação foi desenvolvida seguindo as boas práticas de programação, com foco na legibilidade e manutenibilidade do código.<br>
 
-Para executar a aplicação, siga os seguintes passos:
+## Para executar a aplicação, siga os seguintes passos:
 
 * Clone o repositório em sua máquina local.
 * Certifique-se de ter o Java 8 (JDK 1.8)
