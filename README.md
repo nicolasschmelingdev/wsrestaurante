@@ -58,7 +58,7 @@ Clean Code: a aplicação foi desenvolvida seguindo as boas práticas de program
 * Utilize o MySql para criar um SCHEMA chamado DBRESTAURANTE
 * Utilize a QUERY disponibilizada pra criar as tabelas e relações utilizadas
 * Configure o banco de dados no arquivo presente em com.cardapiodigital "PersistenceConfig.java"
-* Faça a build do projeto através do comando mvn spring-boot:run
+* Faça a build do projeto através do comando mvn spring-boot:run (esta é a goal utilizada)
 * Caso deseje fazer a depuração faça através de algum depurador remoto como "Remote Java Application" no eclipse
 * Utilize os seguintes dados para as requisições que exigem Basic Auth (definidos apenas para metodos todos POST em SecurityConfig.java):
 <p>			Usuario: nicolas </p>
