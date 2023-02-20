@@ -47,7 +47,7 @@ Além da implementação dos critérios de entrega, foram implementados os segui
 
 Segurança: a aplicação utiliza autenticação e autorização para proteger as rotas de acesso POST através de ferramentas gerenciadas pelo Spring Security.<br>
 
-Swagger: a aplicação disponibiliza uma documentação Swagger com a descrição de todas as rotas disponíveis. A documentação está disponivel no repositório Git.<br>
+Swagger: a aplicação disponibiliza uma documentação Swagger com a descrição de todas as rotas disponíveis. A documentação está disponivel no ultimo tópico deste arquivo.<br>
 
 Clean Code: a aplicação foi desenvolvida seguindo as boas práticas de programação, com foco na legibilidade e manutenibilidade do código.<br>
 
@@ -55,11 +55,19 @@ Para executar a aplicação, siga os seguintes passos:
 
 * Clone o repositório em sua máquina local.
 * Certifique-se de ter o Java 8 (JDK 1.8)
+* Utilize o MySql para criar um SCHEMA chamado DBRESTAURANTE
+* Utilize a QUERY disponibilizada pra criar as tabelas e relações utilizadas
+* Configure o banco de dados no arquivo presente em com.cardapiodigital "PersistenceConfig.java"
 * Faça a build do projeto através do comando mvn spring-boot:run
-* Caso deseje fazer a depuração faça através de algum depurador remoto como "Remote Java Application"
-* Utilize os seguintes dados para as requisições que exigem Basic Auth (Metodos POST):
+* Caso deseje fazer a depuração faça através de algum depurador remoto como "Remote Java Application" no eclipse
+* Utilize os seguintes dados para as requisições que exigem Basic Auth (definidos apenas para metodos todos POST em SecurityConfig.java):
 <p>			Usuario: nicolas </p>
 <p>			Senha: 12345678  </p>
+
+## Documentação
+
+* https://documenter.getpostman.com/view/21462893/2s93CHvFW4
+
 
 
 
