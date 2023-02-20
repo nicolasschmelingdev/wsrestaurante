@@ -1,179 +1,165 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Gerenciamento de Lanches - Startup de Alimentos</title>
+<title>Gerenciador de Lanches</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-/* CSS começa aqui */
 body {
-	font-family: Arial, sans-serif;
-	color: #333;
-	background-color: #f2f2f2;
+	font-family: "Helvetica Neue", sans-serif;
+	background-color: #1d1f27;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	text-align: center;
+	margin-top: 0;
+	font-size: 4rem;
+	text-shadow: 2px 2px #000;
+	letter-spacing: 3px;
 }
 
 h1 {
-	text-align: center;
+	color: #ff8800;
 }
 
-h2 {
-	margin-top: 30px;
+p {
+	font-size: 2rem;
+	line-height: 1.5;
+	margin: 0 0 20px 0;
 }
 
-.cardapio {
-	margin-top: 20px;
-	border: 1px solid #ccc;
-	padding: 10px;
+table {
+	border-collapse: collapse;
+	width: 100%;
+	border: none;
+	margin-bottom: 40px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
 }
 
-.cardapio ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+th, td {
+	text-align: left;
+	padding: 20px;
+	font-size: 2rem;
+	border: none;
+	border-bottom: 1px solid #333;
 }
 
-.cardapio li {
-	margin: 10px 0;
+th {
+	background-color: #ff8800;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-top: 3px solid #333;
+	border-bottom: 3px solid #333;
 }
 
-.cardapio label {
-	display: inline-block;
-	width: 100px;
+tr:nth-child(even) {
+	background-color: #2e2f38;
 }
 
-.personalizado {
-	margin-top: 20px;
-	border: 1px solid #ccc;
-	padding: 10px;
-}
-
-.personalizado input[type="checkbox"] {
-	margin-right: 10px;
-}
-
-.promocao {
-	margin-top: 20px;
-	border: 1px solid #ccc;
-	padding: 10px;
-}
-
-.promocao ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.promocao li {
-	margin: 10px 0;
-}
-
-.promocao label {
-	display: inline-block;
-	width: 200px;
-}
-
-.total {
-	font-size: 24px;
+.price {
 	font-weight: bold;
-	margin-top: 20px;
+	color: #ff8800;
+	text-shadow: 2px 2px #000;
+	font-size: 2.4rem;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #ff8800;
+	color: #fff;
+	padding: 12px 24px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 2rem;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: none;
+	margin-top: 40px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #ff8800;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px;
 }
 </style>
 </head>
 <body>
- <h1>Gerenciamento de Lanches - Startup de Alimentos</h1>
- <div class="cardapio">
-  <h2>Cardápio</h2>
-  <ul>
-   <li><label>X-Bacon:</label> <span>R$ 6,90</span></li>
-   <li><label>X-Burger:</label> <span>R$ 4,50</span></li>
-   <li><label>X-Egg:</label> <span>R$ 5,30</span></li>
-   <li><label>X-Egg Bacon:</label> <span>R$ 7,30</span></li>
-  </ul>
- </div>
- <div class="personalizado">
-  <h2>Personalizado</h2>
-  <form>
-   <label>Alface:</label> <input
-    type="checkbox"
-    name="alface"
-    value="0.40"
-   > <label>Bacon:</label> <input
-    type="checkbox"
-    name="bacon"
-    value="2.00"
-   > <label>Hambúrguer:</label> <input
-    type="checkbox"
-    name="hamburguer"
-    value="3.00"
-   > <label>Ovo:</label> <input
-    type="checkbox"
-    name="ovo"
-    value="0.80"
-   > <label>Queijo:</label> <input
-    type="checkbox"
-    name="queijo"
-    value="1.50"
-   >
-  </form>
- </div>
- <table>
-  <tr>
-   <th>Lanche</th>
-   <th>Ingredientes</th>
-   <th>Preço</th>
-  </tr>
-  <tr>
-   <td>X-Bacon</td>
-   <td>Bacon, hambúrguer de carne e queijo</td>
-   <td>R$ 6,50</td>
-  </tr>
-  <tr>
-   <td>X-Burger</td>
-   <td>Hambúrguer de carne e queijo</td>
-   <td>R$ 5,50</td>
-  </tr>
-  <tr>
-   <td>X-Egg</td>
-   <td>Ovo, hambúrguer de carne e queijo</td>
-   <td>R$ 5,80</td>
-  </tr>
-  <tr>
-   <td>X-Egg Bacon</td>
-   <td>Ovo, bacon, hambúrguer de carne e queijo</td>
-   <td>R$ 7,30</td>
-  </tr>
- </table>
- <form>
-  <label for="ingredientes">Escolha seus ingredientes:</label><br> <input
-   type="checkbox"
-   id="alface"
-   name="alface"
-   value="0.40"
-  > <label for="alface">Alface</label><br> <input
-   type="checkbox"
-   id="bacon"
-   name="bacon"
-   value="2.00"
-  > <label for="bacon">Bacon</label><br> <input
-   type="checkbox"
-   id="hamburguer"
-   name="hamburguer"
-   value="3.00"
-  > <label for="hamburguer">Hambúrguer de carne</label><br> <input
-   type="checkbox"
-   id="ovo"
-   name="ovo"
-   value="0.80"
-  > <label for="ovo">Ovo</label><br> <input
-   type="checkbox"
-   id="queijo"
-   name="queijo"
-   value="1.50"
-  > <label for="queijo">Queijo</label><br>
-  <br>
-  <button
-   type="button"
-   onclick="calcularPreco()"
-  >Calcular preço</button>
- </form>
- <p id="preco-final"></p>
+	<div class="container">
+		<h1>Gerenciador de Lanches</h1>
+		<h2>Ingredientes</h2>
+		<table>
+			<tr>
+				<th>Ingrediente</th>
+				<th>Preço</th>
+			</tr>
+			<tr>
+				<td>Alface</td>
+				<td class="price">R$ 0,40</td>
+
+
+			</tr>
+			<tr>
+				<td>Bacon</td>
+				<td class="price">R$ 2,00</td>
+			</tr>
+			<tr>
+				<td>Hambúrguer</td>
+				<td class="price">R$ 3,00</td>
+			</tr>
+			<tr>
+				<td>Ovo</td>
+				<td class="price">R$ 0,80</td>
+			</tr>
+			<tr>
+				<td>Queijo</td>
+				<td class="price">R$ 1,50</td>
+			</tr>
+		</table>
+		<h2>Opções de Cardápio</h2>
+		<table>
+			<tr>
+				<th>Lanche</th>
+				<th>Ingredientes</th>
+				<th>Preço</th>
+			</tr>
+			<tr>
+				<td>X-Bacon</td>
+				<td>Bacon, hambúrguer de carne e queijo</td>
+				<td class="price">R$ 6,50</td>
+			</tr>
+			<tr>
+				<td>X-Burger</td>
+				<td>Hambúrguer de carne e queijo</td>
+				<td class="price">R$ 4,50</td>
+			</tr>
+			<tr>
+				<td>X-Egg</td>
+				<td>Ovo, hambúrguer de carne e queijo</td>
+				<td class="price">R$ 5,30</td>
+			</tr>
+			<tr>
+				<td>X-Egg Bacon</td>
+				<td>Ovo, bacon, hambúrguer de carne e queijo</td>
+				<td class="price">R$ 7,30</td>
+			</tr>
+		</table>
 </body>
 </html>
