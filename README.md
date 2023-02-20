@@ -47,7 +47,7 @@ Além da implementação dos critérios de entrega, foram implementados os segui
 
 Segurança: a aplicação utiliza autenticação e autorização para proteger as rotas de acesso POST através de ferramentas gerenciadas pelo Spring Security.<br>
 
-Swagger: a aplicação disponibiliza uma documentação Swagger com a descrição de todas as rotas disponíveis. A documentação está disponivel no repositório Git.<br>
+Swagger: a aplicação disponibiliza uma documentação Swagger com a descrição de todas as rotas disponíveis. A documentação está disponivel no ultimo tópico deste arquivo.<br>
 
 Clean Code: a aplicação foi desenvolvida seguindo as boas práticas de programação, com foco na legibilidade e manutenibilidade do código.<br>
 
